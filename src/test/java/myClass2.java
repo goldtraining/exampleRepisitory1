@@ -7,6 +7,7 @@ public class myClass2 {
   public void Test02() throws InterruptedException {
 	  WebDriver driver = new ChromeDriver();
 	  driver.get("http://atidcollege.co.il/");
+	  driver.manage().window().maximize();
 	  Thread.sleep(4000);
 	  driver.quit();	
 	  System.out.println("Test02 from class 2 Completed successfully");
